@@ -21,3 +21,19 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+package-lock.json
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# next.js
+/.next/
+/out/
+
+# production
+
+# misc
+*.pem
+
+# local env files
+# vercel
+.vercel
