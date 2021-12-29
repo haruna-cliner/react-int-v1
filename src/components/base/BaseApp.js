@@ -2,9 +2,11 @@ import React, {useEffect} from 'react';
 
 const BaseApp = ({children}) => {
     useEffect(() => {
-        import "jquery/dist/jquery.min.";
-        import "bootstrap/dist/js/bootstrap.bundle";
-        import "jquery-easing/jquery.easing.1.3";
+        if (typeof window !== "undefined" && typeof window.document !== "undefined") {
+            window.jQuery = require("jquery/dist/jquery");
+            require("bootstrap/dist/js/bootstrap.bundle")
+            require("jquery-easing/jquery.easing.1.3");
+        }
     }, [])
     return (
         <>

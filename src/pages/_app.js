@@ -1,4 +1,5 @@
-import '../styles/globals.css'
+import "../styles/global.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import {Provider} from 'react-redux'
 import {store} from "../app/store";
 import BaseApp from "../components/base/BaseApp";

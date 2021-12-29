@@ -1,5 +1,5 @@
 import React from 'react';
-import {Head} from "next/document";
+import Head from "next/head";
 import Navbar from "../layout/navbar";
 import Footer from "../layout/footer";
 import TopBar from "../layout/Topbar";
